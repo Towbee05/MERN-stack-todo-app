@@ -11,6 +11,7 @@ import { List } from "@/types";
 import EditModal from "@/components/EditModal";
 import DeleteModal from "@/components/DeleteModal";
 import './globals.css'
+import { SubmitHandler, useForm } from "react-hook-form";
 
 export default function Dashboard (){
     // const router = useRouter();
@@ -23,6 +24,7 @@ export default function Dashboard (){
     const [ editItem, setEditItem ] = useState<List>({name: '', completed: false});
     const [ deleteItem, setDeleteItem ] = useState<string>('');
     const token: string | undefined = Cookies.get('token');
+    const { register, handleSubmit, watch, formState: { errors } } = useForm<List>();
 
     // Fetch api for user todolist 
     useEffect(() => {
@@ -54,6 +56,16 @@ export default function Dashboard (){
         } catch (err) {
             console.log(err);
         };
+    };
+
+    const onSubmit: SubmitHandler<List> = async (data): Promise<void> => {
+        try {
+            const response = await axios.post('http://localhost:5000/api/v1/tasks/', data, { headers: { Authorization: `Token ${token}` } });
+            await refreshUserTask();
+        } catch (err) {
+            console.log(err);
+        }
+        
     };
 
     if (isLoading) {
@@ -88,24 +100,24 @@ export default function Dashboard (){
                         </button>
                     </div>
                     <div className="space-y-10">
-                        <div className="flex justify-between items-center w-full bg-white dark:bg-slate-900 py-5 px-6 rounded-2xl">
+                        <form action="" method="post" className="flex justify-between items-center w-full bg-white dark:bg-slate-900 py-5 px-6 rounded-2xl" onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex w-full gap-5 ">
-                                <input type="checkbox" name="completed" className="absolute opacity-0 w-0 h-0" id='checkmark' onChange={(e) => setIsChecked(e.target.checked)}/>
-                                <label htmlFor= "checkmark" className={`checkmark flex justify-center items-center w-8 h-8 border-2 border-gray-300 dark:border-2 dark:border-gray-600 dark:bg-slate-900 rounded-full ${ischecked? 'bg-linear-to-r from-purple-500 to-cyan-300': 'bg-white'}`}>
+                                <input type="checkbox" className="absolute opacity-0 w-0 h-0" id='checkmark' {...register('completed')} />
+                                <label htmlFor= "checkmark" className={`checkmark flex justify-center items-center w-8 h-8 border-2 border-gray-300 dark:border-2 dark:border-gray-600 dark:bg-slate-900 rounded-full ${watch('completed') ? 'bg-linear-to-r from-purple-500 to-cyan-300': 'bg-white'}`}>
                                     <Image  
                                         src='/img/icon-check.svg'
                                         alt='checked icon'
                                         width={10}
                                         height={10}
-                                        className={ischecked? 'block': 'hidden'}
+                                        className={watch('completed') ? 'block': 'hidden'}
                                     /> 
                                 </label>
-                                <input type="text" placeholder="Create a new todo ..." className="dark:placeholder:text-gray-200 text-slate-600 text-lg font-bold focus:outline-0 dark:text-gray-400 border-b-2 border-b-slate-600 px-2 "/>
+                                <input type="text" placeholder="Create a new todo ..." className="dark:placeholder:text-gray-200 text-slate-600 text-lg font-bold focus:outline-0 dark:text-gray-400 border-b-2 border-b-slate-600 px-2" {...register('name')} />
                             </div>
                             <button className="cursor-pointer text-slate-600 dark:text-gray-200 bg-purple-600 px-5 py-1 float-right rounded-xl">
                                 Add
                             </button>
-                        </div>
+                        </form>
                         <div>
                             <ul className="flex flex-col bg-white dark:bg-slate-900 rounded-2xl shadow-3xl">
                                 {/* <TodoList /> */}
