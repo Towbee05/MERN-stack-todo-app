@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+@theme{
+    --shadow-3xl: 0 5px 5px 5px rgba(0,0,0,0.4);
+    --bg-modal: rgba(200,200,200, 0.5)
+}
+
+.active {
+    @apply text-blue-500
+}

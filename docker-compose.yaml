@@ -1,0 +1,33 @@
+version: '3.8'
+
+# SERVICES
+services:
+  # Server service
+  server:
+    build: 
+      context: ./server      
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./.env
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - SECRET_JWT_KEY=${SECRET_JWT_KEY}
+      - NODE_ENV=${NODE_ENV}
+    # networks:
+    #   - back-tier
+
+  # Client Service
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports: 
+      - "3000:3000"
+    depends_on:
+      - server
+    # networks:
+    #   - front-tier
