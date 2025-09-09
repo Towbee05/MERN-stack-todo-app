@@ -31,8 +31,12 @@ const createTask = async (req: Request<{}, {}, Task>, res: Response<ApiRespone>)
     try{
         const { name, completed } = req.body;
         const { user } = req.user;
-        if (!name || !user) {
+        console.log(user);
+        if (!user) {
             res.status(StatusCodes.UNAUTHORIZED).json({success: false, message: 'UNATHENTICATED', error: 'Please Login!!'});
+        };
+        if (!name) {
+            res.status(StatusCodes.BAD_REQUEST).json({success: false, message: 'BAD REQUEST', error: 'Please provide a name!!'});
         };
         const { userId } = user;
         console.log(userId);
