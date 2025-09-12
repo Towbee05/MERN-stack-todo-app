@@ -16,7 +16,6 @@ import { SubmitHandler, useForm } from "react-hook-form";
 export default function Dashboard (){
     // const router = useRouter();
     // const { isDarkMode, toggleDarkMode } =  useDarkMode();
-    const [ ischecked, setIsChecked ] = useState<boolean>(false);
     const [ userList, setUserList ] = useState<List[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [editFlag, setEditFlag ] = useState<boolean>(false);
@@ -29,8 +28,7 @@ export default function Dashboard (){
     const { register, handleSubmit, watch, formState: { errors } } = useForm<List>();
     const [ message, setMessage ] = useState<Message>({});
     const [ activeMessage, setActiveMessage ] = useState<boolean>(false);
-    const [ adding, setAdding ] = useState<boolean>(true);
-
+    
     // Fetch api for user todolist 
     useEffect(() => {
         const fetchUserData = async (): Promise<void> => {
@@ -186,7 +184,7 @@ export default function Dashboard (){
                                     </p>
                                     ): (
                                         filteredList.map((list) => {
-                                            return <TodoList key={list._id} editFlag deleteFlag setEditFlag={setEditFlag} setDeleteFlag={setDeleteFlag} list={list} setEditItem={setEditItem} setDeleteItem={setDeleteItem}/>
+                                            return <TodoList key={list._id} editFlag deleteFlag setEditFlag={setEditFlag} setDeleteFlag={setDeleteFlag} list={list} setEditItem={setEditItem} setDeleteItem={setDeleteItem} filteredList={filteredList} setFilteredList={setFilteredList} />
                                         })
                                     )
                                 }

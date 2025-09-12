@@ -1,13 +1,9 @@
-import { TodoListProp } from "@/types";
+import { useState } from "react";
+import { TodoListProp, List } from "@/types";
 import Image from "next/image"
 import '../app/globals.css'
 
-export default function TodoList({list, setDeleteFlag, setEditFlag, editFlag, setEditItem, setDeleteItem}: TodoListProp) {
-    // const [ isListChecked, setisListChecked ] = useState(list.completed);
-    // Handle logic for users done with task
-    // const showEditIcon = (e: React.MouseEvent) => {
-    //     e.preventDefault()
-    // };
+export default function TodoList({list, setDeleteFlag, setEditFlag, editFlag, setEditItem, setDeleteItem, filteredList, setFilteredList}: TodoListProp) {
     const handleEditToggle = (e: React.MouseEvent) => {
         setEditFlag(true);
         if (setEditItem) {
@@ -21,9 +17,45 @@ export default function TodoList({list, setDeleteFlag, setEditFlag, editFlag, se
             if (list?._id) setDeleteItem(list?._id);
         };
     };
+
+    const handleDragStart = (e: React.DragEvent<HTMLLIElement>, id: string| undefined) => {
+        if (!id) return;
+        e.dataTransfer.setData('text/plain', id);
+        e.dataTransfer.effectAllowed = 'move';
+        console.log('start');
+    };
+    
+    const handleDragOver = (e: React.DragEvent<HTMLLIElement>) => {
+        e.preventDefault();
+        console.log('over');
+        e.dataTransfer.dropEffect = 'move';
+    };
+
+    const handleDragDrop = (e: React.DragEvent<HTMLLIElement>, targetID: string | undefined) => {
+        e.preventDefault();
+        if (!targetID) return;
+        console.log('drop');
+        const dragItem = e.dataTransfer.getData('text/plain');
+        const draggedIndex = filteredList?.findIndex(item => item._id === dragItem);
+        const targetIndex = filteredList?.findIndex(item => item._id === targetID);
+
+        console.log(draggedIndex, targetIndex);
+        console.log(dragItem);
+        if (draggedIndex === undefined || targetIndex === undefined || 
+            draggedIndex === -1 || targetIndex === -1 ||
+            draggedIndex === targetIndex) {
+                return;
+        }
+        if (!filteredList || !setFilteredList) return;
+        const newList = [...filteredList];
+        const [ removed ] = newList.splice(draggedIndex, 1);
+        newList.splice(targetIndex, 0, removed);
+        setFilteredList(newList);
+    };  
+
     return (
         <>
-            <li className={`flex justify-between items-center w-full py-7 px-6`}>
+            <li className={`flex justify-between items-center w-full py-7 px-6`} draggable onDragStart={(e) => handleDragStart(e, list._id)} onDragOver={handleDragOver} onDrop={(e) => handleDragDrop(e, list._id)}>
                 <div className="flex w-full gap-5 dark:text-gray-400 font-semibold items-center">
                     <input type="checkbox" name="completed" className="absolute opacity-0 w-0 h-0" id={list._id} disabled={true} checked={list.completed} />
                     <label htmlFor= {list._id} className={`checkmark flex justify-center items-center w-8 h-8 border-2 border-gray-300 dark:border-2 dark:border-gray-600 dark:bg-slate-900 rounded-full ${list.completed? 'bg-linear-to-r from-purple-500 to-cyan-300': 'bg-white'}`}>

@@ -1,3 +1,5 @@
+import React from "react"
+
 interface LoginType {
     email: string,
     password: string
@@ -39,8 +41,10 @@ interface TodoListProp {
     deleteFlag?: boolean,
     setDeleteFlag: React.Dispatch<React.SetStateAction<boolean>>,
     setDeleteItem?: React.Dispatch<React.SetStateAction<string>>,
-    setEditItem?: React.Dispatch<React.SetStateAction<List>>
-}
+    setEditItem?: React.Dispatch<React.SetStateAction<List>>,
+    filteredList?: List[],
+    setFilteredList?: React.Dispatch<React.SetStateAction<List[]>>
+};
 
 interface EditValue {
     name?: string,
