@@ -119,3 +119,113 @@
 {"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T15:36:34.239Z"}
 {"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:36:34.240Z"}
 {"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2ec7f5478bd717ceacf4d\\\",\\\"name\\\":\\\"bake and paste\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T15:36:31.912Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T15:36:31.912Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T15:36:34.557Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:22.743Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:26.251Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:29.123Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:32.677Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:36.762Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:39.599Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:42.967Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:46.423Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:59:54.749Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:02.362Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:06.046Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:15.362Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:24.683Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:28.163Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:34.386Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:40.452Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:43.725Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:47.108Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:50.073Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:53.148Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:00:56.732Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:01:02.881Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:01:08.258Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:01:14.756Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:01:19.616Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:03:43.642Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:08:11.500Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:08:17.254Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:08:22.411Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:08:59.184Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:09:14.191Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:10:01.355Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:10:16.654Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:11:30.985Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:11:36.118Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:11:52.733Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:12:04.964Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:12:04.964Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:12:05.717Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:12:16.740Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:12:16.740Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:12:17.584Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:13:47.640Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:13:47.640Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:13:48.259Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:13:55.628Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:14:03.105Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:14:03.105Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:14:04.059Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:16:30.085Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:16:30.086Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T16:16:32.476Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:16:40.080Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:16:48.027Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:16:48.027Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:16:48.740Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:16:56.011Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:25:12.204Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:30:53.860Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:31:16.201Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:31:16.202Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T16:31:16.353Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:32:21.865Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:32:32.350Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:32:32.350Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T16:32:32.547Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:32:41.935Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:32:41.935Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T16:32:42.991Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:36:01.823Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:36:01.823Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T16:36:02.056Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T16:36:09.649Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T16:36:09.649Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T16:36:09.840Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:34:18.778Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:34:18.784Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:34:35.621Z"}
+{"errorLabelSet":{},"level":"error","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":{"$oid":"7fffffff0000000000000021"},"maxSetVersion":1,"servers":{"ac-vwblxmr-shard-00-00.pwdn5fv.mongodb.net:27017":{"$clusterTime":null,"address":"ac-vwblxmr-shard-00-00.pwdn5fv.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":115222273,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-vwblxmr-shard-00-01.pwdn5fv.mongodb.net:27017":{"$clusterTime":null,"address":"ac-vwblxmr-shard-00-01.pwdn5fv.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":115222272,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-vwblxmr-shard-00-02.pwdn5fv.mongodb.net:27017":{"$clusterTime":null,"address":"ac-vwblxmr-shard-00-02.pwdn5fv.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":115222273,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-x9n5gq-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"timestamp":"2025-09-11T23:34:48.854Z"}
+{"level":"error","message":"{\"detail\":\"Get all task\",\"message\":{\"errorLabelSet\":{},\"reason\":{\"type\":\"ReplicaSetNoPrimary\",\"servers\":{\"ac-vwblxmr-shard-00-00.pwdn5fv.mongodb.net:27017\":{\"address\":\"ac-vwblxmr-shard-00-00.pwdn5fv.mongodb.net:27017\",\"type\":\"Unknown\",\"hosts\":[],\"passives\":[],\"arbiters\":[],\"tags\":{},\"minWireVersion\":0,\"maxWireVersion\":0,\"roundTripTime\":-1,\"minRoundTripTime\":0,\"lastUpdateTime\":115239316,\"lastWriteDate\":0,\"error\":{\"errorLabelSet\":{},\"beforeHandshake\":false},\"topologyVersion\":null,\"setName\":null,\"setVersion\":null,\"electionId\":null,\"logicalSessionTimeoutMinutes\":null,\"maxMessageSizeBytes\":null,\"maxWriteBatchSize\":null,\"maxBsonObjectSize\":null,\"primary\":null,\"me\":null,\"$clusterTime\":null,\"iscryptd\":false},\"ac-vwblxmr-shard-00-01.pwdn5fv.mongodb.net:27017\":{\"address\":\"ac-vwblxmr-shard-00-01.pwdn5fv.mongodb.net:27017\",\"type\":\"Unknown\",\"hosts\":[],\"passives\":[],\"arbiters\":[],\"tags\":{},\"minWireVersion\":0,\"maxWireVersion\":0,\"roundTripTime\":-1,\"minRoundTripTime\":0,\"lastUpdateTime\":115239315,\"lastWriteDate\":0,\"error\":{\"errorLabelSet\":{},\"beforeHandshake\":false},\"topologyVersion\":null,\"setName\":null,\"setVersion\":null,\"electionId\":null,\"logicalSessionTimeoutMinutes\":null,\"maxMessageSizeBytes\":null,\"maxWriteBatchSize\":null,\"maxBsonObjectSize\":null,\"primary\":null,\"me\":null,\"$clusterTime\":null,\"iscryptd\":false},\"ac-vwblxmr-shard-00-02.pwdn5fv.mongodb.net:27017\":{\"address\":\"ac-vwblxmr-shard-00-02.pwdn5fv.mongodb.net:27017\",\"type\":\"Unknown\",\"hosts\":[],\"passives\":[],\"arbiters\":[],\"tags\":{},\"minWireVersion\":0,\"maxWireVersion\":0,\"roundTripTime\":-1,\"minRoundTripTime\":0,\"lastUpdateTime\":115239315,\"lastWriteDate\":0,\"error\":{\"errorLabelSet\":{},\"beforeHandshake\":false},\"topologyVersion\":null,\"setName\":null,\"setVersion\":null,\"electionId\":null,\"logicalSessionTimeoutMinutes\":null,\"maxMessageSizeBytes\":null,\"maxWriteBatchSize\":null,\"maxBsonObjectSize\":null,\"primary\":null,\"me\":null,\"$clusterTime\":null,\"iscryptd\":false}},\"stale\":false,\"compatible\":true,\"heartbeatFrequencyMS\":10000,\"localThresholdMS\":15,\"setName\":\"atlas-x9n5gq-shard-0\",\"maxElectionId\":{\"$oid\":\"7fffffff0000000000000021\"},\"maxSetVersion\":1,\"commonWireVersion\":0,\"logicalSessionTimeoutMinutes\":null}}}","timestamp":"2025-09-11T23:35:05.634Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:39:36.762Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:41:10.158Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:44:58.982Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:44:58.982Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T23:45:02.158Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:50:22.262Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:50:22.262Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2f54b5478bd717ceacff8\\\",\\\"name\\\":\\\"bake and hiss\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T16:14:03.557Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T23:50:22.462Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:52:32.683Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:52:46.184Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:52:46.184Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68be1bcb2c581c38a000a700\\\",\\\"name\\\":\\\"Wash the car\\\",\\\"completed\\\":true,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"updatedAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T23:52:46.437Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:52:50.688Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:52:50.689Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68be1bcb2c581c38a000a700\\\",\\\"name\\\":\\\"Wash the car\\\",\\\"completed\\\":true,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"updatedAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T23:52:50.863Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:52:57.237Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T23:53:04.273Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T23:53:04.273Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68be1bcb2c581c38a000a700\\\",\\\"name\\\":\\\"Wash the car\\\",\\\"completed\\\":true,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"updatedAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T23:53:04.459Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-12T09:53:21.453Z"}
+{"level":"error","message":"{\"detail\":\"edit task\",\"message\":{\"errors\":{\"name\":{\"name\":\"ValidatorError\",\"message\":\"Please Specify a name\",\"properties\":{\"message\":\"Please Specify a name\",\"type\":\"required\",\"path\":\"name\",\"fullPath\":\"name\",\"value\":\"\",\"length\":0},\"kind\":\"required\",\"path\":\"name\",\"value\":\"\"}},\"_message\":\"Validation failed\",\"name\":\"ValidationError\",\"message\":\"Validation failed: name: Please Specify a name\"}}","timestamp":"2025-09-12T09:53:47.918Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-12T09:55:26.519Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-12T09:55:50.037Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-12T09:56:29.135Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-12T10:00:40.414Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-12T10:00:54.305Z"}
+{"level":"info","message":{"completed":false,"name":""},"timestamp":"2025-09-12T10:02:24.509Z"}
+{"level":"error","message":"{\"detail\":\"edit task\",\"message\":{\"errors\":{\"name\":{\"name\":\"ValidatorError\",\"message\":\"Please Specify a name\",\"properties\":{\"message\":\"Please Specify a name\",\"type\":\"required\",\"path\":\"name\",\"fullPath\":\"name\",\"value\":\"\",\"length\":0},\"kind\":\"required\",\"path\":\"name\",\"value\":\"\"}},\"_message\":\"Validation failed\",\"name\":\"ValidationError\",\"message\":\"Validation failed: name: Please Specify a name\"}}","timestamp":"2025-09-12T10:02:24.551Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-12T10:05:29.458Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-12T10:05:43.892Z"}

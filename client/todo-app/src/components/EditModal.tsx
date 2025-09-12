@@ -44,7 +44,8 @@ export default function EditModal({setEditFlag, editItem, refreshUserTask}: Edit
                             <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
                                 <div>
                                     <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Task Name</label>
-                                    <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter name" {...register("name")} />
+                                    <input type="text" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Enter name" {...register("name", { required: 'Please provide a name' })} />
+                                    { errors.name && <p> {errors.name.message} </p> }
                                 </div>
                                 <div>
                                     <p className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">

@@ -33,7 +33,6 @@ const createTask = async (req: Request<{}, {}, Task>, res: Response<ApiRespone>)
             return res.status(StatusCodes.BAD_REQUEST).json({success: false, message: 'BAD REQUEST', error: 'Please provide a name!!'});
         };
         const { userId } = user;
-        logger.info(`${userId}`);
         const existingTask = await Tasks.findOne({name, user:userId});
         if (existingTask) {
             logger.info(JSON.stringify({detail: 'Existing task' ,task: JSON.stringify(existingTask)}));
@@ -95,14 +94,17 @@ const editTask = async (req: Request<{id: string}, {}, Task>, res: Response<ApiR
         if (!user) {
             return res.status(StatusCodes.UNAUTHORIZED).json({success: false, message: 'UNATHENTICATED', error: 'Please Login!!'});
         };
-        
+        const { name, completed } = req.body;
+        if (!name) {
+            return res.status(StatusCodes.BAD_REQUEST).json({success: false, message: 'BAD REQUEST', error: 'Please provide a name!!'});
+        };
         const { userId } = user;
         const { id } = req.params; 
         const task = await Tasks.findOneAndUpdate(
             {
                 _id: id, user: userId
             }, 
-            req.body, 
+            {name, completed}, 
             {
                 new: true, runValidators: true
             }
