@@ -47,4 +47,12 @@ interface EditValue {
     completed?: boolean
 };
 
-export type { Signup, LoginType, List, TodoListProp, EditType, EditValue, DeleteType };
+interface Message {
+    success?: boolean,
+    message?: string,
+    data?: List,
+    error?: string,
+    status?: number
+}
+
+export type { Signup, LoginType, List, TodoListProp, EditType, EditValue, DeleteType, Message };

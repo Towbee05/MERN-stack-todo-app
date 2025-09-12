@@ -12,3 +12,14 @@ interface Payload {
     userId: string,
     iat: number
 }
+
+interface Task {
+    id?: string,
+    name: string,
+    completed: boolean,
+    user: string,
+    timestamp? : Date
+};
+
+
+export type { Task }

@@ -1,0 +1,17 @@
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T18:16:26.692Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T18:19:45.947Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T18:23:44.133Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T19:06:34.441Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-10T08:43:25.674Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-10T08:43:45.123Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-10T08:52:49.887Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-10T08:54:25.770Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-10T08:54:31.611Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:01:16.651Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:04:55.236Z"}
+{"beforeHandshake":false,"connectionGeneration":0,"errorLabelSet":{},"level":"error","timestamp":"2025-09-11T14:06:44.026Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-11T14:08:19.126Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:09:52.623Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-11T14:11:12.580Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:14:17.521Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:15:00.512Z"}

@@ -1,0 +1,121 @@
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:33:21.816Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:35:00.903Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:35:29.162Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:35:33.747Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:37:37.110Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:37:41.950Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:38:06.316Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:38:10.688Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:42:05.451Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:42:14.988Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:42:58.560Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:43:17.073Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:43:22.064Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:44:45.047Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:44:50.186Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:45:14.811Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:45:31.523Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:45:34.102Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:45:59.642Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:46:04.220Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:47:40.081Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:47:45.587Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T16:54:59.828Z"}
+{"level":"info","message":"Server started on port: ","timestamp":"2025-09-09T16:55:04.994Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:16:26.544Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T18:16:26.692Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:18:56.393Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T18:19:45.947Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:20:57.957Z"}
+{"level":"info","message":"Server started on port:","timestamp":"2025-09-09T18:21:10.874Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:22:53.711Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T18:23:44.133Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:24:26.379Z"}
+{"level":"info","message":"Server started on port","timestamp":"2025-09-09T18:25:00.610Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:27:21.891Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T18:27:27.450Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:30:26.952Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T18:30:31.667Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:33:29.155Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T18:33:35.587Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T18:34:11.820Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T18:34:20.223Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T19:00:38.156Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T19:01:00.158Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T19:01:26.800Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T19:05:39.961Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-09T19:06:34.441Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T19:10:33.013Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T19:11:15.477Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T19:13:48.482Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T19:13:55.453Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T19:14:09.920Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T19:14:14.500Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T22:36:32.319Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T22:36:52.691Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T22:42:38.862Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T22:42:44.981Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-09T22:44:29.455Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-09T22:44:34.523Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:43:25.559Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-10T08:43:25.674Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:43:45.068Z"}
+{"code":"ECONNREFUSED","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-10T08:43:45.123Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:45:48.659Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-10T08:45:58.817Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:47:40.901Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-10T08:47:47.306Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:52:42.352Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-10T08:52:49.887Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:54:12.334Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-10T08:54:25.770Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-10T08:54:29.905Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-10T08:54:31.611Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:00:29.591Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:01:16.651Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:04:35.031Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:04:55.236Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:05:15.108Z"}
+{"beforeHandshake":false,"connectionGeneration":0,"errorLabelSet":{},"level":"error","timestamp":"2025-09-11T14:06:44.026Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:07:25.653Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-11T14:08:19.126Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:09:34.196Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:09:52.623Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:10:13.967Z"}
+{"code":"ETIMEOUT","hostname":"_mongodb._tcp.task.pwdn5fv.mongodb.net","level":"error","syscall":"querySrv","timestamp":"2025-09-11T14:11:12.580Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:14:11.961Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:14:17.521Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:14:55.297Z"}
+{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"errorLabelSet":{},"errorResponse":{"code":8000,"codeName":"AtlasError","errmsg":"bad auth : authentication failed","ok":0},"level":"error","ok":0,"timestamp":"2025-09-11T14:15:00.512Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:17:36.524Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T14:17:49.944Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:27:19.685Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T14:27:57.229Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:28:31.398Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T14:28:55.960Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:42:53.407Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T14:43:08.345Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T14:44:57.190Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T14:46:05.541Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T14:46:37.028Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T14:46:58.211Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T15:02:05.677Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T15:02:26.568Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T15:04:21.087Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T15:05:04.877Z"}
+{"level":"info","message":{"iat":1756300134,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T15:07:05.865Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:07:05.866Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T15:25:17.646Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T15:25:22.966Z"}
+{"level":"info","message":{"iat":1756300134,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T15:25:45.609Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:25:45.610Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c07b4c9e3a10937052e73e\\\",\\\"name\\\":\\\"Bake and Shake run\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-09T19:09:00.679Z\\\",\\\"updatedAt\\\":\\\"2025-09-09T19:09:00.679Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T15:25:45.869Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-11T15:35:20.846Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-11T15:35:26.792Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:35:39.758Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T15:36:31.711Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:36:31.712Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:36:32.669Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-11T15:36:34.239Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-11T15:36:34.240Z"}
+{"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68c2ec7f5478bd717ceacf4d\\\",\\\"name\\\":\\\"bake and paste\\\",\\\"completed\\\":false,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-11T15:36:31.912Z\\\",\\\"updatedAt\\\":\\\"2025-09-11T15:36:31.912Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-11T15:36:34.557Z"}

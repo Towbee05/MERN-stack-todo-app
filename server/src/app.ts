@@ -4,6 +4,7 @@ import authrouter from './routes/auth';
 import taskrouter from './routes/task';
 import connectDatabase from './db/connectDB';
 import letTheCatOutOfTheBag from './utils/config';
+import logger from '../services/logger.services';
 
 const app = express();
 const corsOption = {
@@ -19,7 +20,8 @@ app.use(cors(corsOption));
 app.use(express.json());
 app.use('/api/v1', authrouter);
 app.use('/api/v1/tasks', taskrouter);
-console.log("Hello, Node application");
+
+logger.info('Hello, node application');
 
 const port: number = Number(letTheCatOutOfTheBag('PORT'));
 const mongo_uri: string = letTheCatOutOfTheBag('MONGO_URI');
@@ -33,9 +35,10 @@ app.get('/', (req: Request, res: Response) => {
 app.listen(port, async () => {
     try{
         const connection = await connectDatabase(mongo_uri);
-        console.log(connection.connection.name);
-        console.log('Server started on port: ', port);
+        logger.info(JSON.stringify({message: 'Server started on port'}));
+        console.log('started');
     } catch (err) {
+        logger.error(err);
         console.log(err);
         process.exit(1);
     };

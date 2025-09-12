@@ -5,9 +5,9 @@ import { useEffect, useState, useCallback } from "react";
 // import { useRouter } from "next/navigation";
 import TodoList from "@/components/TodoList";
 import Cookies from "js-cookie";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import Loading from "@/components/Loading";
-import { List } from "@/types";
+import { List, Message } from "@/types";
 import EditModal from "@/components/EditModal";
 import DeleteModal from "@/components/DeleteModal";
 import './globals.css'
@@ -27,6 +27,7 @@ export default function Dashboard (){
     const [ filteredList, setFilteredList ] = useState<List[]>([]);
     const token: string | undefined = Cookies.get('token');
     const { register, handleSubmit, watch, formState: { errors } } = useForm<List>();
+    const [ message, setMessage ] = useState<Message>({});
 
     // Fetch api for user todolist 
     useEffect(() => {
@@ -41,7 +42,10 @@ export default function Dashboard (){
                 setUserList(data.data);
                 setFilteredList(data.data);
             } catch (err) {
+                const data = err.response.data;
+                console.log(data);
                 console.log(err);
+                // setMessage(err);
             };
         };
         fetchUserData();
@@ -55,8 +59,12 @@ export default function Dashboard (){
             if (!data.success) {
                 console.log(data);
             };
-            setUserList(data.data);
-            setFilteredList(data.data);
+            const response_data = data.data;
+            setUserList(response_data);
+            console.log(response_data);
+            if (filter === 'all') setFilteredList(response_data);
+            else if (filter === 'active') setFilteredList(response_data.filter((task: List) => !task.completed));
+            else setFilteredList(response_data.filter((task: List) => task.completed));
         } catch (err) {
             console.log(err);
         };
@@ -67,14 +75,22 @@ export default function Dashboard (){
             const response = await axios.post('http://localhost:5000/api/v1/tasks/', data, { headers: { Authorization: `Token ${token}` } });
             await refreshUserTask();
         } catch (err) {
-            console.log(err);
+            if (axios.isAxiosError(err)){
+                const data: Message = err.response?.data;
+                setMessage({
+                    status: err.status,
+                    success: data.success,
+                    message: data.message,
+                    error: data.error
+                });
+            } else {
+                console.log(err);
+            };
         }
         
     };
 
     const handleBtns = useCallback((category: 'all' | 'completed' | 'active') => {
-        // const categoryBtn = e.currentTarget.dataset.category;
-        // setCategory(categoryBtn);
         switch(category) {
             case 'all':
                 setFilteredList(userList);
@@ -89,7 +105,6 @@ export default function Dashboard (){
                 setFilter('completed');
                 break;
         };
-        // setCategory(categoryFn);
     }, [userList]);
 
     if (isLoading) {
@@ -99,6 +114,21 @@ export default function Dashboard (){
     };
     return (
         <section className="min-h-screen w-full flex justify-center">
+            {/* <div id="alert-border-3" className="flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50 dark:text-green-400 dark:bg-gray-800 dark:border-green-800" role="alert">
+                <svg className="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                </svg>
+                <div className="ms-3 text-sm font-medium text-white">
+                A simple success alert with an <a href="#" className="font-semibold underline hover:no-underline">example link</a>. Give it a click if you like.
+                </div>
+                <button type="button" className="ms-auto -mx-1.5 -my-1.5 bg-green-50 text-green-500 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 hover:bg-green-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-green-400 dark:hover:bg-gray-700"  data-dismiss-target="#alert-border-3" aria-label="Close">
+                <span className="sr-only">Dismiss</span>
+                <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                </button>
+            </div> */}
+
             <div className="bg-[url(/img/bg-mobile-light.jpg)] md:bg-[url(/img/bg-bg-desktop-light.jpg)] w-full px-4 bg-no-repeat bg-contain dark:bg-[url(/img/bg-mobile-dark.jpg)] md:dark:bg-[url(/img/bg-desktop-dark.jpg)] dark:bg-slate-950 flex justify-center">
                 <div className="max-w-[750px] w-full">
                     <div className="w-full flex justify-between items-center pt-22 md:pt-32 pb-14 px-5">
@@ -123,6 +153,25 @@ export default function Dashboard (){
                         </button>
                     </div>
                     <div className="space-y-10">
+                        <div id="alert-border-2" className="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800" role="alert">
+                            <svg className="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                            </svg>
+                            <div className="ms-3 text-sm font-medium text-white space-y-2.5">
+                                <h4>
+                                    { message.message } 
+                                </h4>
+                                <p>
+                                    { message.error }
+                                </p>
+                            </div>
+                            <button type="button" className="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700"  data-dismiss-target="#alert-border-2" aria-label="Close">
+                            <span className="sr-only">Dismiss</span>
+                            <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            </button>
+                        </div>
                         <form action="" method="post" className="flex justify-between items-center w-full bg-white dark:bg-slate-900 py-5 px-6 rounded-2xl" onSubmit={handleSubmit(onSubmit)}>
                             <div className="flex w-full gap-5 ">
                                 <input type="checkbox" className="absolute opacity-0 w-0 h-0" id='checkmark' {...register('completed')} />
@@ -157,7 +206,7 @@ export default function Dashboard (){
                                 }
                                 <div className="flex justify-between items-center dark:text-gray-400 px-6 py-7">
                                     <p>
-                                        {(filteredList.filter(list => !list.completed)).length} items left
+                                        {(userList.filter(list => !list.completed)).length} items left
                                     </p>
                                     <button className="cursor-pointer">
                                         Clear completed

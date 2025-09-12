@@ -8,6 +8,7 @@ import jwt from 'jsonwebtoken';
 import { generateToken } from '../utils/generateUserToken';
 import letTheCatOutOfTheBag from '../utils/config';
 import { StatusCodes } from 'http-status-codes';
+import logger from '../../services/logger.services';
 
 type SignupRequest = {
     username: string,
@@ -86,7 +87,7 @@ const signupController = async (req: Request<{}, {}, SignupRequest >, res: Respo
         });  
 
     } catch (err) {
-        console.log(err);
+        logger.error(err);
         res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
             success: false,
             message: 'Internal Server Error',

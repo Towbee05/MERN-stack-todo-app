@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import customErrorAPI from "../errors/custom-error";
-import { Task } from "../controllers/tasks";
+import { Task } from "../types/express";
 
 interface UserInterface extends mongoose.Document{
     username: string,
