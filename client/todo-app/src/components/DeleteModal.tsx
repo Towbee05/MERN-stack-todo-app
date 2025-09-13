@@ -3,8 +3,10 @@ import { handleFormErrors } from "@/util";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function DeleteModal ({ setDeleteFlag, deleteItem, refreshUserTask }: DeleteType) {
+    const router = useRouter();
     const token: string | undefined = Cookies.get('token');
     const [ message, setMessage ] = useState<Message>({});
     const [ activeMessage, setActiveMessage ] = useState<boolean>(false);
@@ -17,7 +19,7 @@ export default function DeleteModal ({ setDeleteFlag, deleteItem, refreshUserTas
             await refreshUserTask();
             setDeleteFlag(false);
         } catch (err) {
-            handleFormErrors(err, setMessage, setActiveMessage);
+            handleFormErrors(err, setMessage, setActiveMessage, router);
         } finally{
             setIsLoading(false);
         };

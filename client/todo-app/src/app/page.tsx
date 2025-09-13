@@ -1,8 +1,6 @@
 "use client"
 import Image from "next/image"
-// import useDarkMode from "@/hooks/useDarkMode";
 import { useEffect, useState, useCallback } from "react";
-// import { useRouter } from "next/navigation";
 import TodoList from "@/components/TodoList";
 import Cookies from "js-cookie";
 import axios, { AxiosError } from "axios";
@@ -13,10 +11,12 @@ import DeleteModal from "@/components/DeleteModal";
 import './globals.css'
 import { SubmitHandler, useForm } from "react-hook-form";
 import { handleFormErrors } from "@/util";
+import { useRouter } from "next/navigation"; 
 
 export default function Dashboard (){
     // const router = useRouter();
     // const { isDarkMode, toggleDarkMode } =  useDarkMode();
+    const router = useRouter();
     const [ userList, setUserList ] = useState<List[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [editFlag, setEditFlag ] = useState<boolean>(false);
@@ -78,7 +78,7 @@ export default function Dashboard (){
             const response = await axios.post('http://localhost:5000/api/v1/tasks/', data, { headers: { Authorization: `Token ${token}` } });
             await refreshUserTask();
         } catch (err) {
-            handleFormErrors(err, setMessage, setActiveMessage);
+            handleFormErrors(err, setMessage, setActiveMessage, router);
         } finally {
             setAdding(false);
         }

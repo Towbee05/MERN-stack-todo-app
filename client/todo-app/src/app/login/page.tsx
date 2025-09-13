@@ -24,35 +24,41 @@ export default function Login() {
         const {data: apiData} = response;
         if (apiData.success){
           const token: string = apiData.data.token;
-          Cookies.set('token', token);
+          Cookies.set('token', token, {
+            expires: 3,
+            path: '/',
+            secure: true,
+          });
+          console.log(Cookies);
           router.push('/');
         } else {
           console.log(apiData);
         };
     } catch (err) {
-      handleFormErrors(err, setMessage, setActiveMessage)
+      console.log(err);
+      handleFormErrors(err, setMessage, setActiveMessage);
     } finally {
       setIsLoading(false);
     }
   };
   return (
     <section className="bg-gray-50 dark:bg-gray-900 min-h-screen w-full grid place-items-center">
-      {  activeMessage && 
-          <div id="alert-border-2" className="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800 w-1/2" role="alert">
-              <svg className="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-              </svg>
-              <div className="ms-3 text-sm font-medium text-white space-y-2.5">
-                  <h4>
-                      { message.message } 
-                  </h4>
-                  <p>
-                      { message.error }
-                  </p>
-              </div>
-          </div>
-      }
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 w-full">
+          {  activeMessage && 
+              <div id="alert-border-2" className="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50 dark:text-red-400 dark:bg-gray-800 dark:border-red-800 w-1/2" role="alert">
+                  <svg className="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                  </svg>
+                  <div className="ms-3 text-sm font-medium text-white space-y-2.5">
+                      <h4>
+                          { message.message } 
+                      </h4>
+                      <p>
+                          { message.error }
+                      </p>
+                  </div>
+              </div>
+          }
           <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
               <Image className="w-8 h-8 mr-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/logo.svg" alt="logo" width={40} height={40}/>
               Flowbite    

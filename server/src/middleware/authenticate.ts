@@ -8,7 +8,7 @@ const authenticateUser = async (req: Request, res: Response, next: NextFunction)
     // Check header for token
     const authHeader: string | undefined = req.headers.authorization;
     if (!authHeader) {
-        throw new Error('Unauthenticated!!!');
+        return res.status(401).json({ success: false, message: 'UNAUTHENTICATED', error: 'Please Login'})
     };
     if (authHeader && authHeader.startsWith('Token')){
         token = authHeader.split(' ')[1];
@@ -17,7 +17,7 @@ const authenticateUser = async (req: Request, res: Response, next: NextFunction)
         token = req.cookies.token
     };
     if (!token) {
-        throw new Error('Unauthenticated!!!');
+        return res.status(401).json({ success: false, message: 'UNAUTHENTICATED', error: 'Please Login'})
     };
     try{
         const payload = isValidToken(token);
@@ -26,7 +26,7 @@ const authenticateUser = async (req: Request, res: Response, next: NextFunction)
             user: payload
         };
     } catch {
-        throw new Error('Unauthenticated!!!');
+        return res.status(401).json({ success: false, message: 'UNAUTHENTICATED', error: 'Please Login'})
     };
     next();
 };

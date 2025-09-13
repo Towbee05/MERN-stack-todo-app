@@ -5,9 +5,10 @@ import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import Cookies from "js-cookie";
 import { handleFormErrors } from "@/util";
-
+import { useRouter } from "next/navigation";
 
 export default function EditModal({setEditFlag, editItem, refreshUserTask}: EditType) {
+    const router = useRouter();
     const { register, handleSubmit, watch,formState: { errors }, setValue} = useForm<EditValue>();
     const [ isLoading, setIsLoading ] = useState<boolean>(false);
     const [ message, setMessage ] = useState<Message>({});
@@ -24,7 +25,7 @@ export default function EditModal({setEditFlag, editItem, refreshUserTask}: Edit
             await refreshUserTask();
             setEditFlag(false);
         } catch (err) {
-            handleFormErrors(err, setMessage, setActiveMessage);
+            handleFormErrors(err, setMessage, setActiveMessage, router);
         } finally {
             setIsLoading(false);
         }
