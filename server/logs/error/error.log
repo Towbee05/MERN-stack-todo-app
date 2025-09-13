@@ -22,3 +22,15 @@
 {"address":"ac-vwblxmr-shard-00-02.pwdn5fv.mongodb.net:27017","beforeHandshake":false,"errorLabelSet":{},"level":"error","timestamp":"2025-09-12T16:42:26.202Z"}
 {"beforeHandshake":true,"connectionGeneration":1054,"errorLabelSet":{},"level":"error","timestamp":"2025-09-12T16:42:26.205Z"}
 {"beforeHandshake":true,"connectionGeneration":1054,"errorLabelSet":{},"level":"error","timestamp":"2025-09-12T16:42:26.209Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:30:06.501Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:38:53.101Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:38:59.625Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:39:06.585Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:39:32.832Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:40:09.935Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:40:35.027Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:40:53.195Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:03.391Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:13.747Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:25.310Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:35.057Z"}

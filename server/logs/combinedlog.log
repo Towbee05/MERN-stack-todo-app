@@ -256,3 +256,23 @@
 {"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-12T16:42:47.442Z"}
 {"level":"info","message":"{\"detail\":\"Existing task\",\"task\":\"{\\\"_id\\\":\\\"68be1bcb2c581c38a000a700\\\",\\\"name\\\":\\\"Wash the car\\\",\\\"completed\\\":true,\\\"user\\\":\\\"68aeffd26b15328bb468864f\\\",\\\"createdAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"updatedAt\\\":\\\"2025-09-07T23:56:59.532Z\\\",\\\"__v\\\":0}\"}","timestamp":"2025-09-12T16:42:51.794Z"}
 {"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-12T16:44:38.279Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-12T18:08:41.833Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-12T18:17:38.746Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-12T21:09:22.697Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-12T21:35:38.646Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:30:06.501Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T00:37:09.626Z"}
+{"level":"info","message":{"iat":1757099047,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-13T00:37:14.384Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:38:53.101Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:38:59.625Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:39:06.585Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:39:32.832Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:40:09.935Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:40:35.027Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:40:53.195Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:03.391Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:13.747Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:25.310Z"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","timestamp":"2025-09-13T00:41:35.057Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-13T00:42:31.222Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-13T00:42:34.568Z"}

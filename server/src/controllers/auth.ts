@@ -29,22 +29,11 @@ type ApiRespone<T= any> = {
     error? : string
 };
 
-// type UserData = {
-//     _id: string,
-//     email:string, 
-//     password: string,
-//     createdAt: Date,
-//     updatedAt: Date,
-//     __v: number
-
-// };
-
-
-const signupController = async (req: Request<{}, {}, SignupRequest >, res: Response<ApiRespone>):Promise<void> => {
+const signupController = async (req: Request<{}, {}, SignupRequest >, res: Response<ApiRespone>):Promise<Response> => {
     try{
         const { username, email, password, confirm_password } = req.body
         if (!username || !email || !password || !confirm_password) {
-            res.status(StatusCodes.BAD_REQUEST).json({
+            return res.status(StatusCodes.BAD_REQUEST).json({
                 success: false,
                 message: 'Please input required field!',
                 error: 'Bad Request'
@@ -52,7 +41,7 @@ const signupController = async (req: Request<{}, {}, SignupRequest >, res: Respo
         };
         const emailAlreadyExist = await TaskUser.findOne({email});
         if (emailAlreadyExist) {
-            res.status(StatusCodes.BAD_REQUEST).json({
+            return res.status(StatusCodes.BAD_REQUEST).json({
                 success: false,
                 message: 'Email is already taken',
                 error: 'Bad Request'
@@ -60,14 +49,14 @@ const signupController = async (req: Request<{}, {}, SignupRequest >, res: Respo
         } 
         const usernameAlreadyExist = await TaskUser.findOne({username});
         if (usernameAlreadyExist) {
-            res.status(StatusCodes.BAD_REQUEST).json({
+            return res.status(StatusCodes.BAD_REQUEST).json({
                 success: false,
                 message: 'Username is already taken',
                 error: 'Bad Request'
             });
         };
         if (password !== confirm_password){
-            res.status(StatusCodes.BAD_REQUEST).json({
+            return res.status(StatusCodes.BAD_REQUEST).json({
                 success: false,
                 message: 'Provided password does not match',
                 error: 'PASSWORD_MISMATCH'
@@ -80,7 +69,7 @@ const signupController = async (req: Request<{}, {}, SignupRequest >, res: Respo
         const hashedPassword = await generateHashedPassword(11, password);
         const data = {username, email, password: hashedPassword}
         const user = await TaskUser.create(data);
-        res.status(StatusCodes.CREATED).json({
+        return res.status(StatusCodes.CREATED).json({
             success: true,
             message: 'New user created',
             data: {username, email}
@@ -88,7 +77,7 @@ const signupController = async (req: Request<{}, {}, SignupRequest >, res: Respo
 
     } catch (err) {
         logger.error(err);
-        res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
+        return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
             success: false,
             message: 'Internal Server Error',
             error: 'server_error'
@@ -96,38 +85,35 @@ const signupController = async (req: Request<{}, {}, SignupRequest >, res: Respo
     }
 };
 
-const loginController = async (req: Request<{}, {}, LoginRequest>, res: Response<ApiRespone>): Promise<void> => {
+const loginController = async (req: Request<{}, {}, LoginRequest>, res: Response<ApiRespone>): Promise<Response> => {
     const { email, password } = req.body; 
     if (!email || !password) {
-        res.status(StatusCodes.BAD_REQUEST).json({
+        return res.status(StatusCodes.BAD_REQUEST).json({
             success: false,
             message: 'Plese provide email and password',
             error: 'Invalid Credential'
         });
-        return;
-    }
+    };
     const user = await TaskUser.findOne({email});
     if (!user) {
-        res.status(StatusCodes.BAD_REQUEST).json({
+        return res.status(StatusCodes.BAD_REQUEST).json({
             success: false,
             message: 'Invalid Credentials',
             error: 'Invalid Credential'
         });
-        return;
     };
 
     // Compare user's password
     const isPasswordCorrect = await compare(password, user.password);
     if (!isPasswordCorrect) {
-        res.status(StatusCodes.BAD_REQUEST).json({
+        return res.status(StatusCodes.BAD_REQUEST).json({
             success: false,
             message: 'Invalid Credentials',
             error: 'Invalid Credential'
         });
-        return;
     };
     const token = generateToken({userId: user.id});
-    res.status(StatusCodes.OK).json({
+    return res.status(StatusCodes.OK).json({
         success: true,
         message: 'User fetched successfully',
         data: { token }
