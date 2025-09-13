@@ -16,11 +16,9 @@ export default function useDarkMode() {
         } else {
             document.documentElement.classList.remove('dark');
         };  
-        console.log(systemPrefersDark);
     }, []);
 
     const toggleDarkMode = () => {
-        console.log(isDarkMode);
         const notDarkMode = !isDarkMode;
         setIsDarkMpde(notDarkMode);
         if (notDarkMode) {

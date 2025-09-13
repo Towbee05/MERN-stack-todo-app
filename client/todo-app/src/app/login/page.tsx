@@ -12,7 +12,7 @@ import { handleFormErrors } from "@/util";
 
 export default function Login() {  
   const router = useRouter();  
-  const { register, handleSubmit, watch, formState: {errors}, } = useForm<LoginType>();
+  const { register, handleSubmit } = useForm<LoginType>();
   const [ message, setMessage ] = useState<Message>({});
   const [ activeMessage, setActiveMessage ] = useState<boolean>(false);
   const [ isLoading, setIsLoading ] = useState<boolean>(false);
@@ -29,13 +29,11 @@ export default function Login() {
             path: '/',
             secure: true,
           });
-          console.log(Cookies);
           router.push('/');
         } else {
-          console.log(apiData);
+          return;
         };
     } catch (err) {
-      console.log(err);
       handleFormErrors(err, setMessage, setActiveMessage);
     } finally {
       setIsLoading(false);

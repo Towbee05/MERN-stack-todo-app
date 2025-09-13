@@ -15,7 +15,6 @@ export default function DeleteModal ({ setDeleteFlag, deleteItem, refreshUserTas
         try{
             setIsLoading(true);
             const response = await axios.delete(`http://localhost:5000/api/v1/tasks/${deleteItem}`, { headers: { Authorization: `Token ${token}` } });
-            console.log(response);
             await refreshUserTask();
             setDeleteFlag(false);
         } catch (err) {

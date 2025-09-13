@@ -334,3 +334,22 @@
 {"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:22:09.374Z"}
 {"level":"info","message":"Hello, node application","timestamp":"2025-09-13T11:25:57.795Z"}
 {"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-13T11:26:06.906Z"}
+{"level":"info","message":"Hello, node application","timestamp":"2025-09-13T11:26:45.699Z"}
+{"level":"info","message":"{\"message\":\"Server started on port\"}","timestamp":"2025-09-13T11:27:01.082Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:40:07.876Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:40:15.127Z"}
+{"level":"info","message":{"iat":1757763607,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-13T11:40:23.991Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:40:30.645Z"}
+{"level":"info","message":{"iat":1757763607,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-13T11:40:44.544Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:41:02.507Z"}
+{"level":"info","message":{"iat":1757763607,"userId":"68aeffd26b15328bb468864f"},"timestamp":"2025-09-13T11:41:30.127Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:41:38.576Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:50:02.024Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T11:50:02.598Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T12:21:26.071Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T12:21:27.017Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T13:06:23.088Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T13:06:23.472Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T13:08:19.099Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T13:10:33.375Z"}
+{"level":"info","message":"68aeffd26b15328bb468864f","timestamp":"2025-09-13T13:10:33.928Z"}
